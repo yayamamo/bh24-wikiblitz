@@ -1,28 +1,42 @@
 ---
-title: 'BioHackEU23 report: Template for the very long title'
-title_short: 'BioHackEU23 #26: unknown chemical substances'
+title: 'BioHackJP24 report: Template for the very long title'
+title_short: 'BioHackJP24: Wikiblitz during the Biohackathon 24 '
 tags:
-  - cheminformatics
-  - PubChem
-  - unknown chemical substances
+  - iNaturalist
+  - Wikidata
+  - Biodiversity
+  - Citizen science
 authors:
-  - name: First Author
+  - name: Andra Waagmeester
+    orcid: 0000-0001-9773-4008
     affiliation: 1
-  - name: Last Author
-    orcid: 0000-0000-0000-0000
+  - name: Yasunori Yamamoto
+    orcid: 0000-0002-6943-6887
     affiliation: 2
+  - name: sikeda_0124
+    affiliation: 3
+  - name: Heval Kinch
+    affiliation: 4
+  - name: Núria Queralt Rosinach
+    affiliation: 5
+  - name: Erick Antezana
+    affiliation: 6
+  - name: jkoblitz
+    affiliation: 7
+  - name: toreeriksson
+    affiliation: 8
 affiliations:
-  - name: First Affiliation
+  - name: Micelio BV
     index: 1
-  - name: Second Affiliation
+  - name: Database Center for Life Science
     index: 2
-date: 8 November 2023
+date: 7 September 2024
 cito-bibliography: paper.bib
-event: BH23EU
-biohackathon_name: "BioHackathon Europe 2023"
-biohackathon_url:   "https://biohackathon-europe.org/"
-biohackathon_location: "Barcelona, Spain, 2023"
-group: Project 26
+event: BH24JP
+biohackathon_name: "BioHackathon 2024"
+biohackathon_url:   "https://2024.biohackathon.org"
+biohackathon_location: "Sansuiso, Fukushima, Japan"
+group: WikiBlitz
 # URL to project git repo --- should contain the actual paper.md:
 git_url: https://github.com/biohackrxiv/publication-template
 # This is the short authors description that is used at the
