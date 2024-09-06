@@ -21,7 +21,8 @@ authors:
     affiliation: 5
   - name: Erick Antezana
     affiliation: 6
-  - name: jkoblitz
+  - name: Julia Koblitz
+    orcid: 0000-0002-7260-2129
     affiliation: 7
   - name: toreeriksson
     affiliation: 8
@@ -30,6 +31,8 @@ affiliations:
     index: 1
   - name: Database Center for Life Science
     index: 2
+  - name: Leibniz Institute DSMZ-German Collection of Microorganisms and Cell Cultures
+    index: 7
 date: 7 September 2024
 cito-bibliography: paper.bib
 event: BH24JP
