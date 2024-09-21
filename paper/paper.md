@@ -1,6 +1,6 @@
 ---
-title: 'BioHackJP24 report: Template for the very long title'
-title_short: 'BioHackJP24: Wikiblitz during the Biohackathon 24 '
+title: 'BioHackJP24 report:Running a WikiBlitz during the Biohackathon 24'
+title_short: 'BioHackJP24: Wikiblitz during the Biohackathon 24'
 tags:
   - iNaturalist
   - Wikidata
@@ -33,7 +33,7 @@ affiliations:
     index: 2
   - name: Leibniz Institute DSMZ-German Collection of Microorganisms and Cell Cultures
     index: 7
-date: 7 September 2024
+date: 21 September 2024
 cito-bibliography: paper.bib
 event: BH24JP
 biohackathon_name: "BioHackathon 2024"
@@ -46,11 +46,108 @@ git_url: https://github.com/biohackrxiv/publication-template
 # bottom of the generated paper (typically the first two authors):
 authors_short: First Author \emph{et al.}
 ---
+# Part 1: Report on Biohackathon 24 WikiBlitz
 
+## Introduction
+During the Biohackathon 24 in Fukushima, we ran a WikiBlitz. The term WikiBlitz is a combination of the terms "BioBlitz" and "Wiki." A BioBlitz is an event that focuses on finding and identifying as many species as possible in a specific area over a short time. "Wiki" refers to the Wikimedia Ecosystem, consisting of projects like Wikipedia, Wikidata, and Wikimedia Commons.
+We used the iNaturalist platform to collect observations. iNaturalist is a citizen science project built on the idea of mapping and sharing biodiversity observations globally. It allows users to set licenses for individual observations and provides an extensive API for easy data access, making it perfect for WikiBlitz integration into Wikimedia.
+
+## Setup of the WikiBlitz
+The WikiBlitz setup involved using iNaturalist for observation collection and integration into the Wikimedia ecosystem. Observations were made in the area surrounding the Biohackathon 24 location. Additional metadata, such as species identification and observation quality, were added, and the collected data were shared in the Wikimedia platforms (Commons, Wikidata, Wikipedia).
+
+## Methodology
+We focused on gathering observations using the iNaturalist app. Observations included data like location, date, and time. iNaturalist's API allowed for seamless integration into the Wikimedia projects. The goal was to enrich Wikipedia articles, Wikidata entries, and Wikimedia Commons with biodiversity data.
+
+## Results
+During the Biohackathon24 WikiBlitz, a total of 109 observations were collected, covering 64 different species. The table below summarizes the key statistics:
+
+| Observations | Species | Identifiers | Observers |
+|--------------|---------|-------------|-----------|
+| 109          | 64      | 32          | 8         |
+
+## Discussion
+The WikiBlitz highlighted how iNaturalist and Wikimedia communities can collaborate to document biodiversity. The data collected enriched Wikimedia content and showcased the power of citizen science in contributing to open knowledge platforms. However, the number of observations were limited due to the short duration of the event, but were sufficient to demonstrate the potential of such collaborations.
+The observations obtained during this WikiBlitz are also sufficient to built a tutorial for future WikiBlitz events. In Part 2 of this report, we provide a step-by-step guide for organizing and conducting a WikiBlitz.
+
+### Licenses
+The iNaturalist platform uses a default license, which is the CC-BY-NC license. This license is not compatible with Wikimedia projects, which require a CC0, CC-BY or CC-BY-SA license. Fortunatly, iNaturalist allows users to chance the licenses under which a users would like to release their observations. The first step in participating in a WikiBlitz is to set the license for the observations to a compatible license. Changing this is a bit hidden in the settings of the iNaturalist platform and requires a bit of searching. Doing so is crucial for integrating data into Wikimedia projects, as it ensures compliance with licensing requirements. iNaturalist applies three levels of licenses to observations. There is a license set for the metadata, the images taken and the sounds recorded. The default license for all three is CC-BY-NC. When changing licenses, it is important to consider all three licenses. When only the metadata license is applied, the images can still not be used in Wikimedia projects.
+The lack of an intuitive way to change the license of observations in the iNaturalist apps remains a bottleneck for an effective reuse of the iNaturalist data in the Wikimedia ecosystem, and other open knowledge platforms. Changing the default license to a more open license would facilitate better reuse of observational data from iNaturalist. 
+
+
+The iNaturalist platform allows users to set licenses for their observations. This feature is crucial for integrating data into Wikimedia projects, as it ensures compliance with licensing requirements. Observations collected during the WikiBlitz were shared under appropriate licenses to facilitate their use in Wikimedia content.
+
+## Conclusion
+This WikiBlitz demonstrated the power of combining citizen science platforms like iNaturalist with Wikimedia’s open knowledge base. The observations collected contributed to enriching Wikimedia content on biodiversity. Future WikiBlitz events should aim to expand collaboration and streamline data collection and integration processes.
+
+---
+
+# Part 2: Tutorial for Future WikiBlitz Events
+
+## Introduction to WikiBlitz
+A WikiBlitz combines citizen science and Wikimedia projects to document biodiversity. The iNaturalist platform is used for collecting observations, which are then integrated into Wikimedia projects such as Wikipedia, Wikidata, and Wikimedia Commons.
+
+## Step-by-Step Guide
+
+### Preparation Phase
+1. Set up accounts on iNaturalist and Wikimedia.
+2. Configure observation licenses on iNaturalist.
+3. Identify target species and locations.
+4. Coordinate with local biodiversity experts or WikiProjects.
+
+### Data Collection Phase
+1. Use the iNaturalist app to make observations.
+2. Ensure high-quality data by including metadata (location, time, photos).
+3. Engage the iNaturalist community for species identification.
+
+### Data Integration Phase
+1. Export data from iNaturalist.
+2. Upload media to Wikimedia Commons.
+3. Add relevant information to Wikidata and create Wikipedia articles.
+4. Follow licensing guidelines for media.
+
+## Tools and Resources
+- iNaturalist API for data export.
+- Wikimedia Commons for media hosting.
+- Wikidata and Wikipedia for knowledge integration.
+
+## Tips and Best Practices
+- Organize observations efficiently and ensure high-quality photos.
+- Coordinate with the WikiProject Biodiversity.
+- Avoid common pitfalls, such as incomplete metadata or incorrect species identification.
+
+## Conclusion
+WikiBlitz events are an effective way to document biodiversity and contribute to Wikimedia's open knowledge base. By following this guide, future organizers can successfully conduct their own WikiBlitz events and integrate their findings into the Wikimedia ecosystem.
+
+---
+
+## Acknowledgements
+We would like to thank the organizers of BioHackathon 24 and the WikiProject Biodiversity community for their contributions. We also appreciate the wider iNaturalist community for their dedication to documenting global biodiversity.
+
+## References
 
 # Introduction
+During the Biohackathon 24 in Fukushima we ran a WikiBlitz. The term WikiBlitz is a combination of the terms "BioBlitz" and 
+wiki. A BioBlitz is an event that focuses on finding and identifying as many species as possible in a specific area over a short time. Sometimes dedicated to a small area. 
+Wiki is a short notation for the Wikimedia Ecosystem, that consists of a number of projects, including Wikipedia, Wikidata, and Wikimedia Commans.
 
-As part of the BioHackathon Europe 2023, we here report...
+To collect observations during the WikiBlitz we used the iNaturalist platform. iNaturalist is a citizen science project and online social network of naturalists, citizen scientists, and biologists built on the concept of mapping and sharing observations of biodiversity across the globe. iNaturalist may be accessed via its website or from its mobile applications.
+Other citizen science platforms exist with similar functionality, but iNaturalist is specifically interesting for two reasons. First, it is a platform that allows setting a very dedicated license for individual observations. We will dive into this later in a specific section below. Secondly, iNaturalist has a very extensive API that allows for easy access to the data. This is important for initiatives like the WikiBlitz, where we specificly want to collect data to document the biodiversity of a specific area. 
+Those descriptions are hosted in the Wikimedia ecosystem. The Wikimedia ecosystem consists of different platforms, but as said we focus on Wikipedia, Wikidata, and Wikimedia Commons. Wikipedia is a free online encyclopedia which has 300+ language version, where articles are created and edited by volunteers around the world and hosted by the Wikimedia Foundation. Wikidata is a free and open knowledge base that can be read and edited by both humans and machines. Wikimedia Commons is a media file repository making available public domain and freely-licensed educational media content (images, sound and video clips) to everyone.
+
+In iNaturalist organisms are observed by making photos and adding metadata to the observation. The metadata include the location, the date and time, and the observer. Which are automatically recorded by the app. Subsequently additional metadata can be added to observation, either by the observer or by the community. This additional metadata can include the identification of the organism, the quality of the observation, and the license under which the observation is shared. All this information is available through the extensive API offered by iNaturalist. It is this API that makes including it into the Wikimedia ecosystem straightforward.
+
+Within the Wikimedia community, subgroups gather in so-called Wiki projects. These WikiProjects are formed by dedicated contributors to the different Wikimedia platforms that works towards a specific goal. One of those wikiproject is the Wikiproject Biodiversity that saw the light in 2018 during Wikimedia 2018 in Capetown South Africa `[@fourie2024technology]`. The Wikiproject Biodiversity aims to improve the coverage of biodiversity on Wikipedia and other Wikimedia projects. The WikiBlitz during the Biohackathon 24 was a collaboration between the Wikiproject Biodiversity and the Biohackathon 24. The goal of the Wikiproject Biodiversity is to collect observations from initiatieves like iNaturalist and use the content to enrich Wikipedia (in all languages when possible) tho in the area around the Biohackathon 24 location and to include those observations in the Wikimedia ecosystem. 
+
+We conducted a WikiBlitz during the DBCLS Biohackathon. In this report we describe the setup of the WikiBlitz, the data collected and the integration of the data into the Wikimedia ecosystem.
+
+# Results
+During the Biohackathon24 WikiBlitz we collected a total of 107 observations, by the authors of this manuscript. 
+The observations were made in the area around the Biohackathon 24 location. The observations were made using the iNaturalist app. .
+
+| Observations | Species | Identifiers | Observers |
+|--------------|---------|-------------|-----------|
+| 109          | 64      | 32       | 8         |
+
 
 # Formatting
 
@@ -125,7 +222,7 @@ Possible CiTO typing annotation include:
 ...
 
 ## Acknowledgements
-
-...
+We would like to thank the organizers of the BioHackathon 24 for the opportunity to run the WikiBlitz during the event. We would also like to thank the participants of the Wikiproject Biodiversity for their engatioment and contribution to the software stack used in bridging iNaturalist and the Wikimedia ecosystem. 
+Last but not least, we would like to thank the wider iNaturalist community for their dedication in documenting the biodiversity of our planet.
 
 ## References
