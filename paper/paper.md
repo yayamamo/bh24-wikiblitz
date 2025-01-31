@@ -141,7 +141,7 @@ iNaturalist uses machine learning models to suggest species identifications base
 ### Contribute to the Wikimedia Ecosystem
 As described earlier, we observed 7 species which lack a Wikipedia article. One of these species is the **Panorpa japonica** [Source](https://www.inaturalist.org/observations/238383248)
 
-![**Figure 2:** Panorpa japonica](./Panorpa%20japonica.jpeg)
+![**Figure 2:** Panorpa japonica](./Panorpa_japonica.jpeg)
 
 #### Uploading Observations to Wikimedia Commons
 First we upload this observation to [Wikmedia Commons](https://commons.wikimedia.org/wiki/Main_Page). This can be done by using the main Upload Wizard. However, this requires a lot of manual work. A more efficient way is to use the [iNaturalist2Commons](https://commons.wikimedia.org/wiki/User:Kaldari/iNaturalist2Commons) tool. This uses the iNaturalist API to retrieve the observation combined with needed metadata and uploads it to Wikimedia Commons. The metadata is included in the image description. This tool is especially useful when uploading multiple observations.
