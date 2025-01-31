@@ -18,8 +18,10 @@ authors:
   - name: Heval Kinch
     affiliation: 4
   - name: Núria Queralt Rosinach
+    orcid: 0000-0003-0169-8159
     affiliation: 5
   - name: Erick Antezana
+    orcid: 0000-0002-2497-8236
     affiliation: 6
   - name: Julia Koblitz
     orcid: 0000-0002-7260-2129
