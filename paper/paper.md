@@ -14,26 +14,33 @@ authors:
     orcid: 0000-0002-6943-6887
     affiliation: 2
   - name: Shuya Ikeda
-    affiliation: 3
+    orcid: 0000-0002-1357-5159
+    affiliation: 2
   - name: Heval Kinch
-    affiliation: 4
+    affiliation: 3
   - name: Núria Queralt Rosinach
     orcid: 0000-0003-0169-8159
-    affiliation: 5
+    affiliation: 4
   - name: Erick Antezana
     orcid: 0000-0002-2497-8236
-    affiliation: 6
+    affiliation: 5
   - name: Julia Koblitz
     orcid: 0000-0002-7260-2129
-    affiliation: 7
+    affiliation: 6
   - name: Tore Eriksson
-    affiliation: 8
+    affiliation: 7
 affiliations:
   - name: Micelio BV
     index: 1
   - name: Database Center for Life Science
     index: 2
+  - name: Leiden University Medical Center (LUMC), Netherlands
+    index: 4
+  - name: UN International Computing Centre (UNICC), Spain
+    index: 5
   - name: Leibniz Institute DSMZ-German Collection of Microorganisms and Cell Cultures
+    index: 6
+  - name: Taisho Pharmaceutical, Japan
     index: 7
 date: 21 September 2024
 cito-bibliography: paper.bib
@@ -43,12 +50,11 @@ biohackathon_url:   "https://2024.biohackathon.org"
 biohackathon_location: "Sansuiso, Fukushima, Japan"
 group: WikiBlitz
 # URL to project git repo --- should contain the actual paper.md:
-git_url: https://github.com/biohackrxiv/publication-template
+git_url: https://github.com/biohackathon-japan/bh24-wikiblitz
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
 authors_short: Andra Waagmeester \emph{et al.}
-abstract: |
-  During BioHackathon 24 in Fukushima, we organized a WikiBlitz, a collaborative effort to integrate biodiversity observations from iNaturalist into the Wikimedia ecosystem. A WikiBlitz is inspired by the concept of a BioBlitz, where participants document as many species as possible within a limited time frame, while also contributing structured data to Wikidata, Wikimedia Commons, and Wikipedia. In this report, we describe the methodology and outcomes of this event, including the collection of 109 biodiversity observations and their subsequent verification and integration into Wikimedia platforms. We highlight the challenges and best practices for running a WikiBlitz, particularly around licensing and data quality, and demonstrate how tools such as iNaturalist2Commons and Wikidata queries can enhance the reuse of citizen science data. Finally, we provide a step-by-step tutorial to support future WikiBlitz events, ensuring broader participation and sustainable knowledge-sharing across platforms.
+abstract: During BioHackathon 24 in Fukushima, we organized a WikiBlitz, a collaborative effort to integrate biodiversity observations from iNaturalist into the Wikimedia ecosystem. A WikiBlitz is inspired by the concept of a BioBlitz, where participants document as many species as possible within a limited time frame, while also contributing structured data to Wikidata, Wikimedia Commons, and Wikipedia. In this report, we describe the methodology and outcomes of this event, including the collection of 109 biodiversity observations and their subsequent verification and integration into Wikimedia platforms. We highlight the challenges and best practices for running a WikiBlitz, particularly around licensing and data quality, and demonstrate how tools such as iNaturalist2Commons and Wikidata queries can enhance the reuse of citizen science data. Finally, we provide a step-by-step tutorial to support future WikiBlitz events, ensuring broader participation and sustainable knowledge-sharing across platforms.
 
 ---
 # Part 1: Report on Biohackathon 24 WikiBlitz
@@ -111,8 +117,6 @@ The iNaturalist platform allows users to set licenses for their observations. Th
 ## Discussion
 The WikiBlitz highlighted how iNaturalist and Wikimedia communities can collaborate to document biodiversity. The data collected enriched Wikimedia content and showcased the power of citizen science in contributing to open knowledge platforms. However, the number of observations were limited due to the short duration of the event, but were sufficient to demonstrate the potential of such collaborations and still let to a sufficient number of observations that could be reused in the Wikimedia ecosystem. Future WikiBlitz events aligned with Biohackathons should aim to expand collaboration and streamline data collection and integration processes. This could involve developing tools to automate the process of identifying taxa descriptions missing on Wikipedia and integrating iNaturalist data into Wikimedia projects. Additionally, raising awareness among iNaturalist users about the importance of setting compatible licenses for observations would enhance the reuse of data in the Wikimedia ecosystem.
 In Part 2 of this report we provide a tutorial for future WikiBlitz events, outlining the steps to prepare, observe, and integrate data into the Wikimedia ecosystem.
-
----
 
 # Part 2: Tutorial for future WikiBlitz events
 
