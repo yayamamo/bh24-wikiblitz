@@ -13,7 +13,7 @@ authors:
   - name: Yasunori Yamamoto
     orcid: 0000-0002-6943-6887
     affiliation: 2
-  - name: sikeda_0124
+  - name: Shuya Ikeda
     affiliation: 3
   - name: Heval Kinch
     affiliation: 4
@@ -26,7 +26,7 @@ authors:
   - name: Julia Koblitz
     orcid: 0000-0002-7260-2129
     affiliation: 7
-  - name: toreeriksson
+  - name: Tore Eriksson
     affiliation: 8
 affiliations:
   - name: Micelio BV
@@ -70,7 +70,7 @@ need a Wikimedia account, which is any account on any of the Wikimedia systems (
 on both iNaturalist and any of the wikimedia platforms.
 
 #### iNaturalist Account
-Accounts can be registered at: [https://www.inaturalist.org/signup](https://www.inaturalist.org/signup). It is recommended to signup to iNaturalist on its desktop version. This is because the default license of iNaturalist is incompatible with sharing on Wikipedia. Changing to a compatible license is not possible or less straightforward than on mobile devices. More on this in the next section.
+Accounts can be registered at: [https://www.inaturalist.org/signup](https://www.inaturalist.org/signup). It is recommended to signup to iNaturalist on its desktop version. This is because the default license of iNaturalist is incompatible with sharing on Wikipedia. Changing to a compatible license is not possible on mobile devices, or at leastless straightforward than, on mobile devices. More on this in the next section.
 Once the appropiate license is set, the observations can be made using the iNaturalist app. It is also possible to use cameras and upload the observations later on the iNaturalist website. This is especially useful when the observations are made in areas without good internet connection. When using a camera, it is important to record the location, date and time of the observations. This can be done by using a GPS device or by using the GPS functionality of the camera, some camera models come with a phone app that can be used to record the GPS location of the camera.
 
 #### Wikimedia Account
