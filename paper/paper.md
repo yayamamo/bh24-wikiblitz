@@ -99,8 +99,11 @@ With this metric in place, we can argue that this Wikiblitz lead to at least 35%
 
 ## New taxa description on Wikipedia
 Currently, in all language versions of Wikipedia, there are still many taxa not described. iNaturalist uses the English Wikipedia as its source for the taxon descriptions. If a taxon is not described in the English Wikipedia, the iNaturalist community is invited to start, what is called, a stub. This is a short article that can be expanded by the community. The iNaturalist platform will provide a short template that can be used to start such a stub (Figure 1).
-![Screenshot of the iNaturalist platform showing the option to start a stub](./iNaturalist_stub.png)
-
+<p align="center">
+  <img src="./iNaturalist_stub.png" alt="Screenshot of the iNaturalist platform showing the option to start a stub">
+  <br>
+  <em>Figure 1: Screenshot of the iNaturalist platform showing the option to start a stub</em>
+</p>
 Since the purpose of a WikiBlitz is to enrich the Wikimedia ecosystem with open contribution from iNaturalist, it is also important to consider the creation of new taxa descriptions on Wikipedia. Identifying which taxa description observed during the WikiBlitz can be tedious, since it requires manual checking of each observation. However, for this purpose a jupyter notebook was created that uses both Wikidata and the iNaturalist API to identify which taxa descriptions are missing on Wikipedia. This notebook can be found at [the Wikiproject Biodiversity stubmaker](https://github.com/wikiproject-biodiversity/taxonname-wpstubmaker). At the time of writing, 7 out of the 38 "research grade" observations from the BH24JP WikiBlitz were not described on Wikipedia. This means that 18% of the observations could be used to start new taxa descriptions on Wikipedia, using observations done during the DBCLS Biohackathon 2024.
 
 ### Licenses
