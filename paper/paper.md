@@ -158,7 +158,7 @@ Once accounts and licenses are set up, you can start collecting observations usi
 If using a standalone camera, ensure you record the location using:
 * A GPS-enabled camera, or
 * A GPS device (or a smartphone app that logs GPS coordinates).
-Most mobile phone cameras provide sufficient quality for Wikimedia projects. internet access is limited, you can upload observations later both on the website and the app. 
+Most mobile phone cameras provide sufficient quality for Wikimedia projects. If the Internet access is limited, you can upload observations later both on the website and the app. 
 
 
 #### Using machine learning to identify species
