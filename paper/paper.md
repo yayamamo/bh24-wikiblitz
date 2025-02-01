@@ -212,7 +212,7 @@ For Panorpa japonica, one observation observed by one of the authors during the 
 ## Conclusion
 WikiBlitz events are an effective and entertaining way to document biodiversity and contribute to Wikimedia's open knowledge base. By following this guide, future organizers can successfully conduct their own WikiBlitz events and integrate their findings into the Wikimedia ecosystem. WikiBlitzes are also a nice demonstrator of how data and knowledge can be shared between different platforms and communities.
 
----
+![WikiBlitz Workflow](./conclusion.png)
 
 ## Acknowledgements
 We would like to thank the organizers of BioHackathon 24 and the WikiProject Biodiversity community for their contributions. We also appreciate the wider iNaturalist community for their dedication to documenting global biodiversity.
