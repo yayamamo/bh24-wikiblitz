@@ -32,7 +32,7 @@ authors:
 affiliations:
   - name: Micelio BV
     index: 1
-  - name: Database Center for Life Science
+  - name: Database Center for Life Science (DBCLS), ROIS-DS
     index: 2
   - name: Leiden University Medical Center (LUMC), Netherlands
     index: 4
