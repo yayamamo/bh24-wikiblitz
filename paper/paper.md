@@ -13,27 +13,34 @@ authors:
   - name: Yasunori Yamamoto
     orcid: 0000-0002-6943-6887
     affiliation: 2
-  - name: sikeda_0124
-    affiliation: 3
+  - name: Shuya Ikeda
+    orcid: 0000-0002-1357-5159
+    affiliation: 2
   - name: Heval Kinch
-    affiliation: 4
+    affiliation: 3
   - name: Núria Queralt Rosinach
     orcid: 0000-0003-0169-8159
-    affiliation: 5
+    affiliation: 4
   - name: Erick Antezana
     orcid: 0000-0002-2497-8236
-    affiliation: 6
+    affiliation: 5
   - name: Julia Koblitz
     orcid: 0000-0002-7260-2129
+    affiliation: 6
+  - name: Tore Eriksson
     affiliation: 7
-  - name: toreeriksson
-    affiliation: 8
 affiliations:
   - name: Micelio BV
     index: 1
   - name: Database Center for Life Science
     index: 2
+  - name: Leiden University Medical Center (LUMC), Netherlands
+    index: 4
+  - name: UN International Computing Centre (UNICC), Spain
+    index: 5
   - name: Leibniz Institute DSMZ-German Collection of Microorganisms and Cell Cultures
+    index: 6
+  - name: Taisho Pharmaceutical, Japan
     index: 7
 date: 21 September 2024
 cito-bibliography: paper.bib
@@ -43,10 +50,12 @@ biohackathon_url:   "https://2024.biohackathon.org"
 biohackathon_location: "Sansuiso, Fukushima, Japan"
 group: WikiBlitz
 # URL to project git repo --- should contain the actual paper.md:
-git_url: https://github.com/biohackrxiv/publication-template
+git_url: https://github.com/biohackathon-japan/bh24-wikiblitz
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
-authors_short: First Author \emph{et al.}
+authors_short: Andra Waagmeester \emph{et al.}
+abstract: During BioHackathon 24 in Fukushima, we organized a WikiBlitz, a collaborative effort to integrate biodiversity observations from iNaturalist into the Wikimedia ecosystem. A WikiBlitz is inspired by the concept of a BioBlitz, where participants document as many species as possible within a limited time frame, while also contributing structured data to Wikidata, Wikimedia Commons, and Wikipedia. In this report, we describe the methodology and outcomes of this event, including the collection of 109 biodiversity observations and their subsequent verification and integration into Wikimedia platforms. We highlight the challenges and best practices for running a WikiBlitz, particularly around licensing and data quality, and demonstrate how tools such as iNaturalist2Commons and Wikidata queries can enhance the reuse of citizen science data. Finally, we provide a step-by-step tutorial to support future WikiBlitz events, ensuring broader participation and sustainable knowledge-sharing across platforms.
+
 ---
 # Part 1: Report on Biohackathon 24 WikiBlitz
 
@@ -70,9 +79,11 @@ need a Wikimedia account, which is any account on any of the Wikimedia systems (
 on both iNaturalist and any of the wikimedia platforms.
 
 #### iNaturalist Account
-Accounts can be registered at: [https://www.inaturalist.org/signup](https://www.inaturalist.org/signup). It is recommended to signup to iNaturalist on its desktop version. This is because the default license of iNaturalist is incompatible with sharing on Wikipedia. Changing to a compatible license is not possible or less straightforward than on mobile devices. More on this in the next section.
-Once the appropiate license is set, the observations can be made using the iNaturalist app. It is also possible to use cameras and upload the observations later on the iNaturalist website. This is especially useful when the observations are made in areas without good internet connection. When using a camera, it is important to record the location, date and time of the observations. This can be done by using a GPS device or by using the GPS functionality of the camera, some camera models come with a phone app that can be used to record the GPS location of the camera.
+Accounts can be registered at: [https://www.inaturalist.org/signup](https://www.inaturalist.org/signup). It is best to sign up for iNaturalist on a desktop computer because the default license is not compatible with sharing on Wikipedia. Changing the license to a compatible one is either impossible or significantly more difficult on mobile devices (details in the next section).
 
+After setting the appropriate license, you can use the iNaturalist app to record observations. Alternatively, you can use a camera and upload your observations later via the iNaturalist website. This is especially useful in areas with poor internet access.
+
+If using a camera, ensure you record the location, date, and time of each observation. This can be done with a GPS device, the camera’s built-in GPS (if available), or a companion phone app that logs the camera’s location.
 #### Wikimedia Account
 
 The WikiBlitz setup involved using iNaturalist for observation collection and integration into the Wikimedia ecosystem. Observations were made in the area surrounding the Biohackathon 24 location. Additional metadata, such as species identification and observation quality, were added, and the collected data were shared in the Wikimedia platforms (Commons, Wikidata, Wikipedia).
@@ -94,7 +105,7 @@ With this metric in place, we can argue that this Wikiblitz lead to at least 35%
 
 ## New taxa description on Wikipedia
 Currently, in all language versions of Wikipedia, there are still many taxa not described. iNaturalist uses the English Wikipedia as its source for the taxon descriptions. If a taxon is not described in the English Wikipedia, the iNaturalist community is invited to start, what is called, a stub. This is a short article that can be expanded by the community. The iNaturalist platform will provide a short template that can be used to start such a stub (Figure 1).
-![**Figure 1:** Screenshot of the iNaturalist platform showing the option to start a stub](./iNaturalist_stub.png)
+![Screenshot of the iNaturalist platform showing the option to start a stub](./iNaturalist_stub.png)
 
 Since the purpose of a WikiBlitz is to enrich the Wikimedia ecosystem with open contribution from iNaturalist, it is also important to consider the creation of new taxa descriptions on Wikipedia. Identifying which taxa description observed during the WikiBlitz can be tedious, since it requires manual checking of each observation. However, for this purpose a jupyter notebook was created that uses both Wikidata and the iNaturalist API to identify which taxa descriptions are missing on Wikipedia. This notebook can be found at [the Wikiproject Biodiversity stubmaker](https://github.com/wikiproject-biodiversity/taxonname-wpstubmaker). At the time of writing, 7 out of the 38 "research grade" observations from the BH24JP WikiBlitz were not described on Wikipedia. This means that 18% of the observations could be used to start new taxa descriptions on Wikipedia, using observations done during the DBCLS Biohackathon 2024.
 
@@ -107,57 +118,97 @@ The iNaturalist platform allows users to set licenses for their observations. Th
 The WikiBlitz highlighted how iNaturalist and Wikimedia communities can collaborate to document biodiversity. The data collected enriched Wikimedia content and showcased the power of citizen science in contributing to open knowledge platforms. However, the number of observations were limited due to the short duration of the event, but were sufficient to demonstrate the potential of such collaborations and still let to a sufficient number of observations that could be reused in the Wikimedia ecosystem. Future WikiBlitz events aligned with Biohackathons should aim to expand collaboration and streamline data collection and integration processes. This could involve developing tools to automate the process of identifying taxa descriptions missing on Wikipedia and integrating iNaturalist data into Wikimedia projects. Additionally, raising awareness among iNaturalist users about the importance of setting compatible licenses for observations would enhance the reuse of data in the Wikimedia ecosystem.
 In Part 2 of this report we provide a tutorial for future WikiBlitz events, outlining the steps to prepare, observe, and integrate data into the Wikimedia ecosystem.
 
----
-
-# Part 2: Tutorial for Future WikiBlitz Events
+# Part 2: Tutorial for future WikiBlitz events
 
 ## Introduction to a WikiBlitz
-A WikiBlitz combines citizen science and Wikimedia projects to document biodiversity. The iNaturalist platform is used for collecting observations, which are then integrated into Wikimedia projects such as Wikipedia, Wikidata, and Wikimedia Commons.
+A WikiBlitz combines citizen science and Wikimedia projects to document biodiversity. The iNaturalist platform is used for collecting observations, which are then integrated into Wikimedia projects such as Wikipedia, Wikidata, and Wikimedia Commons. Beyond its scientific and educational value, a WikiBlitz can also be a fun and engaging activity for any conference, event, wedding, or birthday party. It adds an interactive, outdoor element that encourages exploration, collaboration, and learning while contributing to open knowledge and biodiversity conservation. Whether guests are casually identifying species in a park, competing to find the most unusual organism, or working together to improve Wikipedia articles, a WikiBlitz turns any gathering into an entertaining experience with a lasting scientific impact.
+## Step-by-step guide for a WikiBlitz
 
-## Step-by-Step Guide
+### Preparation phase
+1.	Create accounts on iNaturalist and Wikimedia.
+2. Set compatible observation licenses on iNaturalist.
+3.	Identify target species and locations.
+4.	Coordinate with local biodiversity experts or WikiProjects.
 
-### Preparation Phase
-1. Set up accounts on iNaturalist and Wikimedia.
-2. Configure observation licenses on iNaturalist.
-3. Identify target species and locations.
-4. Coordinate with local biodiversity experts or WikiProjects.
+#### Create accounts on iNaturalist and Wikimedia
+To participate in the WikiBlitz, you need at least an iNaturalist account. A Wikimedia account is also recommended.
 
-#### Set up accounts on iNaturalist and Wikimedia platforms
-As a participant in the wikiblitz, you need at least an account on iNaturalist, but an account on a Wikimedia platform is adviced. For iNaturalist the WikiBlitz particpant can create an account at [https://www.inaturalist.org/signup](https://www.inaturalist.org/signup). While iNaturalist is mostly used on its mobile app, tt is recommended to signup to iNaturalist on its desktop version, why will be discussed shortly. The Wikimedia platform includes various crowd sourcing platforms. It is sufficient to have an account on one of the Wikimedia platforms, as the accounts are shared across the different platforms.
-In case you don't have a Wikimedia account yet, you can create one at [https://www.wikidata.org/w/index.php?title=Special:CreateAccount](https://www.wikidata.org/w/index.php?title=Special:CreateAccount). Due to our preference for linked data we took Wikidata as the platform to create an account on.
-With that Wikidata account you can log into the other Wikimedia platforms, like Wikipedia and Wikimedia Commons, which you need to complete the WikiBlitz.
+##### Create an iNaturalist account: https://www.inaturalist.org/signup.
+While iNaturalist is mainly used via mobile, we recommend signing up on a desktop because some settings (such as licenses) can only be changed there.
+
+##### Create a Wikimedia account: https://www.wikidata.org/w/index.php?title=Special:CreateAccount.
+* Wikimedia accounts work across multiple platforms, including Wikidata, Wikipedia, and Wikimedia Commons.
+* Since we focus on linked data, we suggest creating an account via Wikidata.
 
 #### Configure observation licenses on iNaturalist
-By default iNaturalist comes with three licenses. One for the images, one for the sounds and one for the metadata. The default license is the CC-BY-NC license. This license is not compatible with the Wikimedia ecosystem. A chance of license is advised to effectively participate in the WikiBlitz. To change the license, you need to go to the settings of your iNaturalist account. In the settings you can change the license for the metadata, the images and the sounds of the observations. It is important to change all three licenses to a compatible license. The compatible licenses are CC0, CC-BY and CC-BY-SA.
-To our knowledge it is only possible to change the applicable licenses on the desktop version of iNaturalist. This is why we recommend to signup to iNaturalist on its desktop version.
-Once ready with the accounts, you can start with the data collection phase.
+By default, iNaturalist assigns three different licenses: one for images, one for sounds, and one for metadata. The default CC-BY-NC license is **not** compatible with Wikimedia projects.
+To participate effectively in the WikiBlitz, change all three licenses to CC0, CC-BY, or CC-BY-SA by following these steps:
+1. Go to the settings of your iNaturalist account.
+2. Locate the license settings for metadata, images, and sounds.
+3. Select one of the compatible licenses:
+   * CC0: Public domain dedication
+   * CC-BY: Attribution required
+   * CC-BY-SA: Attribution required, share-alike
+4. **Important** Save the changes to apply the new licenses.
 
-### Data Collection Phase
-Adding observations to iNaturalist can be either directly observing the organisms through the iNaturalist app or by uploading media later. The observations should include metadata such as location, date, and time. It is important to ensure the observations are of high quality and include relevant information for later integration into Wikimedia projects.
-When using camera's to observe it is also recommended to either use a camera with GPS functionality or to use a GPS device to record the location of the observations. This is important for the quality of the observations and for the integration of the observations into the Wikimedia ecosystem. 
-The photos made by most mobile phones are of sufficient quality to be used in the Wikimedia ecosystem. Cameras can be practical in regions with limited internet connection. The observations can be uploaded later on the iNaturalist website.
+Since license settings can only be changed on the desktop version of iNaturalist, we recommend signing up via desktop or laptop.
 
-### Using Machine Learning to Identify Species
-iNaturalist uses machine learning models to suggest species identifications based on the observations. This can be helpful for participants who are not experts in species identification, but should also be with care. The models often don't lead to accurate suggestions. When in doubt, it can also be sufficient to annotate the observations by taxa higher in the taxonomic branch. Just calling the observations, e.g. Fish, Fungi, Birds, etc, can already be sufficient to trigger different communities to verify the observations.
+#### Observe and collect (meta) data
+Once accounts and licenses are set up, you can start collecting observations using iNaturalist. There are two methods:
+1. Direct observation via the iNaturalist app (recommended for real-time submissions).
+2. Uploading observations later via the iNaturalist website (useful in areas with poor internet connectivity).
 
-### Contribute to the Wikimedia Ecosystem
-As described earlier, we observed 7 species which lack a Wikipedia article. One of these species is the **Panorpa japonica** [Source](https://www.inaturalist.org/observations/238383248)
+##### Using a camera for Oobservations
+If using a standalone camera, ensure you record the location using:
+* A GPS-enabled camera, or
+* A GPS device (or a smartphone app that logs GPS coordinates).
+Most mobile phone cameras provide sufficient quality for Wikimedia projects. internet access is limited, you can upload observations later both on the website and the app. 
 
-![**Figure 2:** Panorpa japonica](./Panorpa_japonica.jpeg)
 
-#### Uploading Observations to Wikimedia Commons
-First we upload this observation to [Wikmedia Commons](https://commons.wikimedia.org/wiki/Main_Page). This can be done by using the main Upload Wizard. However, this requires a lot of manual work. A more efficient way is to use the [iNaturalist2Commons](https://commons.wikimedia.org/wiki/User:Kaldari/iNaturalist2Commons) tool. This uses the iNaturalist API to retrieve the observation combined with needed metadata and uploads it to Wikimedia Commons. The metadata is included in the image description. This tool is especially useful when uploading multiple observations.
-Using the iNaturalist2Commons tool, we uploaded one [observation](https://commons.wikimedia.org/wiki/File:Panorpa_japonica_424396056.jpg) to Wikimedia commons. 
-If iNaturalist2Commons doesn't work for a given species, it can be that the coverage of the species on Wikidata needs to be verified first. 
+#### Using machine learning to identify species
+iNaturalist provides machine learning-based species suggestions to help identify observations.
+* Use with caution: The AI model is not always accurate.
+When unsure, it’s better to classify at a higher taxonomic level (e.g., “Fish”, “Fungi”, “Birds”) to allow experts to refine the identification later.
 
-#### Verify coverage on Wikidata.
-Next we verified if the species is sufficiently covered on Wikidata. This is the case if links exist to iNaturalist and GBIF. These are made by using the following properties iNaturalist taxon ID (P3151) and GBIF taxon ID (P846). The mapping to Wikimedia commons is made using the sitelinks section of Wikidata which allows linking other Wikimedia projects. The Wikidata entry for the Panorpa japonica can be found [here](https://www.wikidata.org/wiki/Q3362412).
-If the Wikidata Item does not have a statement with the property Image (P18), the image can be added to the Wikidata item. This can be done by clicking on the "Add statement" button and selecting the property "Image". The image can be added by using the "value" field. The image can be found on Wikimedia Commons and can be added by using the "search" function in the "value" field. The image can be added by clicking on the "add" button next to the image. The image will be added to the Wikidata item. The image can be found on Wikimedia Commons and can be added by using the "search" function in the "value" field. The image can be added by clicking on the "add" button next to the image. The image will be added to the Wikidata item. The image can be found on Wikimedia Commons and can be added by using the "search" function in the "value" field. The image can be added by clicking on the "add" button next to the image. The image will be added to the Wikidata item. The image can be found on Wikimedia Commons and can be added by using the "search" function in the "value" field. The image can be added by clicking on the "add" button next to the image. The image will be added to the Wikidata item. The image can be found on Wikimedia Commons and can be added by using the "search" function in the "value" field. The image can be added by clicking on the "add" button next to the image. The image will be added to the Wikidata item. The image can be found on Wikimedia Commons and can be added by using the "search" function in the "value" field. The image can be added by clicking on the "add" button next to the image. The image will be added to the Wikidata item. The image can be found on Wikimedia Commons and can be added by using the link already known from the previous step.
+### Contributing to the Wikimedia ecosystem
+During the WikiBlitz, we identified 7 species that lacked Wikipedia articles, including **Panorpa japonica** [Source](https://www.inaturalist.org/observations/238383248)
+
+![Panorpa japonica](./Panorpa_japonica.jpeg)
+
+#### Uploading observations to Wikimedia Commons
+Observations need to be uploaded to Wikimedia Commons, the media repository for Wikipedia.
+
+##### Uploading with iNaturalist2Commons
+Instead of manually uploading images, we use the [iNaturalist2Commons](https://commons.wikimedia.org/wiki/User:Kaldari/iNaturalist2Commons) tool:
+* Fetches iNaturalist observations via its API.
+* Includes metadata automatically.
+* Uploads images efficiently, especially useful for multiple uploads.
+
+Using this tool, we uploaded an example  [observation](https://commons.wikimedia.org/wiki/File:Panorpa_japonica_424396056.jpg) to Wikimedia commons. 
+If after a succesfull installation the tool doesn't work for a specific species, the issue may be due to missing species coverage on Wikidata (next step).
+
+
+#### Verifying species coverage on Wikidata.
+Before integrating species into Wikipedia, check if they are properly documented on Wikidata.
+For Panorpa japonica, its Wikidata item is: [Q3362412](https://www.wikidata.org/wiki/Q3362412).
+
+Ensure the item at least includes:
+* iNaturalist taxon ID (P3151)
+* GBIF taxon ID (P846)
+* Image (P18): If missing, add the uploaded Wikimedia Commons image.
 
 #### Create a Wikipedia article
-The notebook mentioned earlier can be used to build a Wikipedia stub. It collects the information from iNaturalist, GBIF and the Biodiversity Heritage Library to create a stub. The stub is formated in the Wikitext format used by Wikipedia. The stub can be copied and pasted into a new Wikipedia article. However as is, isn't sufficient to create a new article. Finalising the stub requires a bit more work and either experience in creating Wikipedia articles or supervision by a seasoned Wikipedia editor. For the Panorpa japonica, the stub was manually extended and now lives on [Wikipedia](https://en.wikipedia.org/wiki/Panorpa_japonica).
+Once species data is available on Wikidata and one or more verified images exist on Wikimedia Commons a Wikipedia article can be created.
 
-## Tips and Best Practices
+A script can generate a Wikipedia stub by pulling information from:
+	•	iNaturalist
+	•	GBIF
+	•	Biodiversity Heritage Library
+
+One example of such a script is[the Wikiproject Biodiversity stubmaker](https://github.com/wikiproject-biodiversity/taxonname-wpstubmaker) mentioned earlier 
+For Panorpa japonica, one observation observed by one of the authors during the biohackathon, the stub was manually extended and now lives on [Wikipedia](https://en.wikipedia.org/wiki/Panorpa_japonica).
+
+## Tips and best practices
 - Organize observations efficiently and ensure high-quality photos.
 - Coordinate with the [WikiProject Biodiversity](https://www.wikidata.org/wiki/Wikidata:WikiProject_Biodiversity).
 - Avoid common pitfalls, such as incomplete metadata or incorrect species identification.
@@ -165,7 +216,7 @@ The notebook mentioned earlier can be used to build a Wikipedia stub. It collect
 ## Conclusion
 WikiBlitz events are an effective and entertaining way to document biodiversity and contribute to Wikimedia's open knowledge base. By following this guide, future organizers can successfully conduct their own WikiBlitz events and integrate their findings into the Wikimedia ecosystem. WikiBlitzes are also a nice demonstrator of how data and knowledge can be shared between different platforms and communities.
 
----
+![WikiBlitz Workflow](./conclusion.png)
 
 ## Acknowledgements
 We would like to thank the organizers of BioHackathon 24 and the WikiProject Biodiversity community for their contributions. We also appreciate the wider iNaturalist community for their dedication to documenting global biodiversity.
